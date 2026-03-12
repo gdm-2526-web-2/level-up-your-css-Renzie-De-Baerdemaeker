@@ -4,6 +4,7 @@
 
 /**
 * Wat met de ampersand (&) selector?
+* Verwijst naar de volledige parent selector
 */
 
 /**
@@ -14,6 +15,15 @@
 * Geen concatenatie van selectors mogelijk in pure CSS (Kan wel met preprocessors zoals Sass). Bijvoorbeeld met BEM gaat dit niet.
 */
 
+article + p {
+  background-color: yellow;
+}
+
 /*
 * Nesting met media queries!
 */
+.lead {
+  @media (min-width: 40rem) {
+    font-size: 3rem;
+  }
+}
